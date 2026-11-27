@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main class="card">
+    <h1>Створити аккаунт</h1>
+    <p class="subtitle">Приєднайся до нас, гордості району!!!</p>
+    <form id="register-form">
+        <div class="field">
+            <label>Ім'я коритувача</label>
+            <input type="text" id="username" autocomplete="username" placeholder="Наприклад, Іван" required>
+            <small id="username-error" class="error"></small>
+        </div>
+        <div class="field">
+            <label>Електронна пошта</label>
+            <input type="email" id="email" autocomplete="email" placeholder="abc@example.com" required>
+            <small id="email-error" class="error"></small>
+        </div>
+        <div class="field">
+            <label>Пароль</label>
+            <div class="password-row">
+                <input type="password" id="password" autocomplete="username" placeholder="Мінімум 8 символів" required>
+                <button id="toggle-password" class="toggle" type="button">👁️</button>
+            </div>
+            <small id="password-error" class="error"></small>
+        </div>
+
+        <div class="strength-track"><div id="strength-bar"></div></div>
+        <small id="strength-text">Надійність паролю</small>
+
+        <div class="field">
+            <label>Повторіть пароль</label>
+            <input type="password" id="confirm-password" placeholder="Повторіть пароль" required>
+            <small id="confirm-error" class="error"></small>
+        </div>
+        <div class="field">
+            <label class="terms"><input id="terms" type="checkbox">Погоджуюся з правилами використання особистих данних</label>
+            <small id="terms-error" class="error"></small>
+        </div>
+        <button class="submit" type="submit">Зареєструватися</button>
+        <p id="result"></p>
+
+
+    </form>
+</main>
+</body>
+</html>
